@@ -15,7 +15,7 @@ const findUniqNumber = arr => {
   });
   for (const [number, count] of Object.entries(uniqNumbersCount)) {
     if (count === 1) {
-      return number;
+      return Number(number);
     }
   }
 }

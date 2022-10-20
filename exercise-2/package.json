@@ -1,0 +1,21 @@
+{
+  "name": "exercise-2",
+  "version": "1.0.0",
+  "description": "Test task",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaamosdao/exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaamosdao/exercises/issues"
+  },
+  "homepage": "https://github.com/kaamosdao/exercises#readme",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  }
+}
