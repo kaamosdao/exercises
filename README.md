@@ -23,6 +23,6 @@
 * Выполнить команду npm i.
 * Для проверки решений выполнить команду npm run test.
 
-**ВОЗМОЖНО**, что тесты в папке combineObjects будут падать с ошибкой "TypeError: Converting circular structure to JSON" и указывать на функцию .toEqual().
+**ВОЗМОЖНО**, что тесты в папке combineObjects будут падать с ошибкой "TypeError: Converting circular structure to JSON".
 
 Не обращаем внимание и тестируем вручную на тех данных, которые приведены в combineObjects.test.js
