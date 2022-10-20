@@ -4,8 +4,11 @@
  * @param {Array<number>} arr - Array
  * @returns {Array<number>}
  */
-const findUniqArray = arr => {
-  
-}
+const findUniqArray = arr => arr.reduce((acc, item) => {
+  if (!acc.includes(item)) {
+    acc.push(item);
+  }
+  return acc;
+}, []);
 
 module.exports = findUniqArray;
