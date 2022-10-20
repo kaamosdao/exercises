@@ -14,8 +14,18 @@
  * combine(objA, objB) => { a: 13, b: 20, c: 36, d: 3 }
  * @returns {Object.<string, number>}
  */
-const combineObjects = () => {
-
+const combineObjects = (...objects) => {
+  const result = {};
+  objects.forEach((obj) => {
+    Object.keys(obj).forEach((key) => {
+      if (!result[key]) {
+        result[key] = obj[key];
+      } else {
+        result[key] += obj[key];
+      }
+    });
+  });
+  return result;
 }
 
 module.exports = combineObjects;
