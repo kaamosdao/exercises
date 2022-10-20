@@ -5,7 +5,19 @@
  * @returns {Number}
  */
 const findUniqNumber = arr => {
-  
+  const uniqNumbersCount = {};
+  arr.forEach((number) => {
+    if (!uniqNumbersCount[number]) {
+      uniqNumbersCount[number] = 1;
+    } else {
+      uniqNumbersCount[number] += 1;
+    }
+  });
+  for (const [number, count] of Object.entries(uniqNumbersCount)) {
+    if (count === 1) {
+      return number;
+    }
+  }
 }
 
 module.exports = findUniqNumber;
