@@ -1,0 +1,13 @@
+.form {
+  width: 350px;
+}
+
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__check-container {
+  display: flex;
+  justify-content: space-between;
+}

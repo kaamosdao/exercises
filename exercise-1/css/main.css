@@ -1,5 +1,7 @@
 @import './fonts.css';
+@import '~bootstrap/scss/bootstrap';
 @import './components/page-main.css';
+@import './components/form.css';
 
 body {
   display: flex;

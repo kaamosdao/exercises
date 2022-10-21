@@ -33,7 +33,54 @@
         width="720"
         height="900"
       />
-      <div class="page-main__form"></div>
+      <div class="page-main__form">
+        <h1 class="visually-hidden">Login form</h1>
+        <form class="form">
+          <h2 class="page-main__header">Login to your account</h2>
+          <div class="mb-3 form__email">
+            <label for="email" class="form-label form__email-label">
+              Email
+            </label>
+            <input
+              type="email"
+              class="form-control form__email-input"
+              id="email"
+            />
+          </div>
+          <div class="mb-3 form__password">
+            <label for="password" class="form-label form__password-label">
+              Password
+            </label>
+            <input
+              type="password"
+              class="form-control form__password-input"
+              id="password"
+              autocomplete="current-password"
+            />
+          </div>
+          <div class="form__check-container">
+            <div class="mb-3 form-check form__check">
+              <input
+                type="checkbox"
+                class="form-check-input form__check-input"
+                id="check"
+              />
+              <label class="form-check-label form__check-label" for="check">
+                Remember me
+              </label>
+            </div>
+            <a href="#" class="form__link">Forgot password?</a>
+          </div>
+          <div class="form__buttons">
+            <button type="submit" class="btn btn-primary form__login-button">
+              Login now
+            </button>
+            <button type="button" class="btn btn-secondary form__signup-button">
+              Or sign-in with google
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
