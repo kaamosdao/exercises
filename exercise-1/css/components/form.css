@@ -10,6 +10,7 @@
 .form__check-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 27px;
 }
 
 .form__check-label {
@@ -17,9 +18,27 @@
   line-height: 16px;
 }
 
+.form__header {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #1a202c;
+}
+
 .form__link {
   font-size: 14px;
   line-height: 16px;
   color: #2c5282;
   text-decoration: none;
+}
+
+.form__password {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__email {
+  display: flex;
+  flex-direction: column;
 }

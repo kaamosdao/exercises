@@ -3,6 +3,9 @@
 @import './components/page-main.css';
 @import './components/form.css';
 @import './components/button.css';
+@import './components/input-email.css';
+@import './components/input-password.css';
+@import './components/input-checkbox.css';
 
 body {
   display: flex;

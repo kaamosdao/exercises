@@ -36,39 +36,32 @@
       <div class="page-main__form">
         <h1 class="visually-hidden">Login form</h1>
         <form class="form">
-          <h2 class="page-main__header">Login to your account</h2>
-          <div class="mb-3 form__email">
-            <label for="email" class="form-label form__email-label">
-              Email
-            </label>
-            <input
-              type="email"
-              class="form-control form__email-input"
-              id="email"
-            />
+          <h2 class="form__header">Login to your account</h2>
+          <div class="form__email input-email">
+            <label for="email" class="input-email__label"> Email </label>
+            <input type="email" class="input-email__input" id="email" />
           </div>
-          <div class="mb-3 form__password">
-            <label for="password" class="form-label form__password-label">
+          <div class="form__password input-password">
+            <label for="password" class="input-password__label">
               Password
             </label>
             <input
               type="password"
-              class="form-control form__password-input"
+              class="input-password__input"
               id="password"
               autocomplete="current-password"
             />
           </div>
           <div class="form__check-container">
-            <div class="mb-3 form-check form__check">
+            <label class="input-checkbox" for="check">
               <input
                 type="checkbox"
-                class="form-check-input form__check-input"
+                class="input-checkbox__input visually-hidden"
                 id="check"
               />
-              <label class="form-check-label form__check-label" for="check">
-                Remember me
-              </label>
-            </div>
+              <span class="input-checkbox__mark"></span>
+              <span class="input-checkbox__label">Remember me</span>
+            </label>
             <a href="#" class="form__link">Forgot password?</a>
           </div>
           <div class="form__buttons button">

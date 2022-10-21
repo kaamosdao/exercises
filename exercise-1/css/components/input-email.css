@@ -1,0 +1,11 @@
+.input-email__input {
+  margin-bottom: 11px;
+  padding: 17px 20px;
+  min-height: 50px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.input-email__label {
+  margin-bottom: 11px;
+}

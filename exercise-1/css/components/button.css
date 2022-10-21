@@ -12,13 +12,45 @@
 }
 
 .button__signup {
+  position: relative;
   width: 100%;
   min-height: 50px;
-  padding: 5px;
+  padding: 5px 5px 5px 33px;
   box-sizing: border-box;
   font-weight: 700;
   color: #ffffff;
   border: none;
   border-radius: 5px;
   background-color: #2d3748;
+}
+
+.button__signup::after {
+  content: '';
+  position: absolute;
+  left: 79px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/img/icon-google.png');
+}
+
+.button__login:disabled,
+.button__signup:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.button__login:hover,
+.button__signup:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button__login:active,
+.button__signup:active {
+  opacity: 0.5;
+}
+
+.button__login:focus-visible,
+.button__signup:focus-visible {
+  outline: 3px solid #2d3748;
 }
