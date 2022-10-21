@@ -17,3 +17,10 @@
 .page-main__img {
   display: block;
 }
+
+.page-main__header {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #1A202C;
+}

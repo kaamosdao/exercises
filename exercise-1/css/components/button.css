@@ -1,0 +1,24 @@
+.button__login {
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #04c45c;
+}
+
+.button__signup {
+  width: 100%;
+  min-height: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #2d3748;
+}

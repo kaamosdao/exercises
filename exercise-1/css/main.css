@@ -1,14 +1,20 @@
-@import './fonts.css';
 @import '~bootstrap/scss/bootstrap';
+@import './fonts.css';
 @import './components/page-main.css';
 @import './components/form.css';
+@import './components/button.css';
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d3748;
+  background-color: #ffffff;
 }
 
 img {

@@ -11,3 +11,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.form__check-label {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #2c5282;
+  text-decoration: none;
+}
