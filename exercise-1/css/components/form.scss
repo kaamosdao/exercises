@@ -1,5 +1,8 @@
 .form {
-  width: 350px;
+  min-width: 350px;
+  @media (max-width: 659px) {
+    min-width: 300px;
+  }
 }
 
 .form__buttons {
@@ -24,6 +27,10 @@
   font-size: 30px;
   line-height: 35px;
   color: #1a202c;
+
+  @media (max-width: 1399px) {
+    text-align: center;
+  }
 }
 
 .form__link {

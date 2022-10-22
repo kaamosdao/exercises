@@ -30,7 +30,11 @@
   left: 79px;
   width: 20px;
   height: 20px;
-  background-image: url('../../assets/img/icon-google.png');
+  background-image: url('../assets/img/icon-google.png');
+
+  @media (max-width: 659px) {
+    left: 55px;
+  }
 }
 
 .button__login:disabled,

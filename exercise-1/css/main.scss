@@ -1,11 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
-@import './fonts.css';
-@import './components/page-main.css';
-@import './components/form.css';
-@import './components/button.css';
-@import './components/input-email.css';
-@import './components/input-password.css';
-@import './components/input-checkbox.css';
+@import './fonts.scss';
+@import './components/page-main.scss';
+@import './components/form.scss';
+@import './components/button.scss';
+@import './components/input-email.scss';
+@import './components/input-password.scss';
+@import './components/input-checkbox.scss';
 
 body {
   display: flex;
