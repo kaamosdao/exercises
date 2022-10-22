@@ -1,5 +1,3 @@
-import './css/main.scss';
+import init from './js/init.js'
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('loaded');
-});
+init();

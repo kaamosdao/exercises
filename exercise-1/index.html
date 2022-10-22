@@ -39,7 +39,12 @@
           <h2 class="form__header">Login to your account</h2>
           <div class="form__email input-email">
             <label for="email" class="input-email__label"> Email </label>
-            <input type="email" class="input-email__input" id="email" />
+            <input
+              class="input-email__input"
+              id="email"
+              autocomplete="email"
+              name="email"
+            />
           </div>
           <div class="form__password input-password">
             <label for="password" class="input-password__label">
@@ -50,6 +55,7 @@
               class="input-password__input"
               id="password"
               autocomplete="current-password"
+              name="password"
             />
           </div>
           <div class="form__check-container">
@@ -58,6 +64,7 @@
                 type="checkbox"
                 class="input-checkbox__input visually-hidden"
                 id="check"
+                name="checkboxRemember"
               />
               <span class="input-checkbox__mark"></span>
               <span class="input-checkbox__label">Remember me</span>
