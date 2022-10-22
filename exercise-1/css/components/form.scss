@@ -1,5 +1,11 @@
 .form {
+  margin-left: 16px;
   min-width: 350px;
+
+  @media (max-width: 1399px) {
+    margin-left: 0;
+  }
+
   @media (max-width: 659px) {
     min-width: 300px;
   }
@@ -13,7 +19,7 @@
 .form__check-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .form__check-label {
@@ -22,6 +28,7 @@
 }
 
 .form__header {
+  margin-top: 22px;
   margin-bottom: 24px;
   font-weight: 700;
   font-size: 30px;
