@@ -20,9 +20,9 @@ export default () => {
       const shouldRemember = !!formData.get('checkboxRemember');
 
       elements.emailAlert.classList.add('hide');
-      elements.passwordInput.classList.remove('input-password__input--invalid');
+      elements.passwordInput.classList.remove('is-invalid');
       elements.passwordAlert.classList.add('hide');
-      elements.emailInput.classList.remove('input-email__input--invalid');
+      elements.emailInput.classList.remove('is-invalid');
 
       validate(email, password);
 
@@ -36,12 +36,12 @@ export default () => {
         if (error.field === 'email') {
           elements.emailAlert.textContent = error.message;
           elements.emailAlert.classList.remove('hide');
-          elements.emailInput.classList.add('input-email__input--invalid');
+          elements.emailInput.classList.add('is-invalid');
         }
         if (error.field === 'password') {
           elements.passwordAlert.textContent = error.message;
           elements.passwordAlert.classList.remove('hide');
-          elements.passwordInput.classList.add('input-password__input--invalid');
+          elements.passwordInput.classList.add('is-invalid');
         }
       });
     }
