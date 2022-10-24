@@ -47,6 +47,11 @@
   text-decoration: none;
 }
 
+.form__link:focus {
+  border-radius: 3px;
+  outline: 3px solid #86b7fe;
+}
+
 .form__password {
   display: flex;
   flex-direction: column;

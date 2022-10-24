@@ -1,5 +1,8 @@
+import { Modal } from 'bootstrap';
 import '../css/main.scss';
+import LocalStorageData from './localStorageData';
 import validate from './validate';
+import LoginView from './view';
 
 export default () => {
   const elements = {
@@ -8,42 +11,39 @@ export default () => {
     passwordAlert: document.querySelector('.input-password__alert'),
     passwordInput: document.querySelector('.input-password__input'),
     emailInput: document.querySelector('.input-email__input'),
+    modal: document.querySelector('#modal'),
   };
+
+  const localStorageLogin = new LocalStorageData('login');
+  const loginView = new LoginView(elements);
+  const loginModal = new Modal(elements.modal);
+
+  if (localStorageLogin.hasData()) {
+    const { email, password } = localStorageLogin.getData();
+    loginView.renderInitialValues(email, password);
+  }
 
   elements.form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-
+    
     try {
+      loginView.renderToDefault();
+      
+      const formData = new FormData(e.target);
       const email = formData.get('email');
       const password = formData.get('password');
       const shouldRemember = !!formData.get('checkboxRemember');
 
-      elements.emailAlert.classList.add('hide');
-      elements.passwordInput.classList.remove('is-invalid');
-      elements.passwordAlert.classList.add('hide');
-      elements.emailInput.classList.remove('is-invalid');
-
       validate(email, password);
 
+      loginModal.show();
+
       if (shouldRemember) {
-        console.log('yep');
-      } else {
-        console.log('no');
+        localStorageLogin.setData(email, password);
       }
+
     } catch (error) {
-      error.errors.forEach((error) => {
-        if (error.field === 'email') {
-          elements.emailAlert.textContent = error.message;
-          elements.emailAlert.classList.remove('hide');
-          elements.emailInput.classList.add('is-invalid');
-        }
-        if (error.field === 'password') {
-          elements.passwordAlert.textContent = error.message;
-          elements.passwordAlert.classList.remove('hide');
-          elements.passwordInput.classList.add('is-invalid');
-        }
-      });
+      loginView.renderErrors(error.errors);
     }
   });
 };

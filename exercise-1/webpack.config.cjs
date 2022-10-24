@@ -13,7 +13,7 @@ module.exports = {
   },
   entry: './main.js',
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, 'dist/public'),
     clean: true,
   },
   optimization: {
@@ -31,8 +31,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'assets'),
-          to: path.resolve(__dirname, 'build/assets'),
+          from: path.resolve(__dirname, 'assets/img'),
+          to: path.resolve(__dirname, 'dist/public/assets/img'),
         },
       ],
     }),
@@ -58,9 +58,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        type: 'asset',
-      },
+        test: /\.(woff(2)?|ttf|eot)$/,
+        type: 'asset/resource',
+        generator: {
+            filename: 'assets/fonts/[name][ext]',
+        },
+    },
     ],
   },
 };

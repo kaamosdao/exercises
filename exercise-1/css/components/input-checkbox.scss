@@ -11,7 +11,7 @@
 }
 
 .input-checkbox:focus-within .input-checkbox__mark {
-  outline: 2px solid #2d3748;
+  outline: 2px solid #86b7fe;
 }
 
 .input-checkbox:active .input-checkbox__mark {
@@ -39,8 +39,10 @@
 .input-checkbox__input:checked + .input-checkbox__mark::after {
   content: '';
   position: absolute;
-  top: 3.5px;
-  left: 3.5px;
+  top: 50%;
+  left: 50%;
+  margin-left: -3.5px;
+  margin-top: -3.5px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
